@@ -7,7 +7,7 @@ export default function Collapse({ title, children }) {
     setIsOpen(!isOpen);
   };
 
-  // Génère un ID unique basé sur le titre (ex: "Description" -> "collapse-description")
+  // Génère un ID unique basé sur le titre ("Description" -> "collapse-description")
   // Cet ID lie le bouton au contenu pour l'accessibilité
   const contentId = `collapse-${title.toLowerCase().replace(/\s+/g, "-")}`;
 

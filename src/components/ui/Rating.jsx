@@ -5,7 +5,7 @@ export default function Rating({ value }) {
   const stars = [1, 2, 3, 4, 5];
 
   return (
-    // role="img" + aria-label pour que le lecteur d'écran annonce la note globale
+    // role="img" + aria-label -> lecteur d'écran annonce note globale
     <div className="rating" role="img" aria-label={`Note : ${value} sur 5`}>
       {/* Boucle sur chaque nombre */}
       {stars.map((position) => (

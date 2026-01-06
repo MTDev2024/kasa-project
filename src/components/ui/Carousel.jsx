@@ -6,9 +6,9 @@ export default function Carousel({ images, title }) {
   // Ici on initialise à l'index 0
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Navigation clavier (accessibilité)
+  // Navigation clavier
   useEffect(() => {
-    // Forme fonctionnelle de setState pour éviter currentIndex dans les dépendances
+    // Forme fonctionnelle de setState -> éviter currentIndex dans les dépendances
     const goNext = () => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     };
