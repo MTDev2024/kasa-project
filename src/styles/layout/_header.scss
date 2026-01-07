@@ -1,6 +1,5 @@
 // HEADER
 
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -14,7 +13,7 @@
   padding: 40px $container-padding-mobile;
   
   @include respond-to('desktop') {
-    padding: 40px $container-padding-desktop; // 100px left/right
+    padding: 40px $container-padding-desktop;
   }
   
   &__logo {
@@ -40,9 +39,11 @@
     font-weight: $font-weight-medium;
     color: $color-dark;
     text-decoration: none;
+    text-transform: uppercase; 
     
     @include respond-to('desktop') {
       font-size: $font-size-nav-desktop;
+      text-transform: none;  
     }
     
     &.active {
