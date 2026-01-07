@@ -31,7 +31,8 @@
   height: 32px;
   border-radius: 50%; 
   object-fit: cover;
-  flex-shrink: 0; // Empêche reduction image
+  // Empêche reduction image
+  flex-shrink: 0; 
   
   @include respond-to('desktop') {
     width: 64px; // Desktop
